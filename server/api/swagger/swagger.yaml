@@ -1,0 +1,71 @@
+swagger: "2.0"
+info:
+  version: "0.0.1"
+  title: Hello World App
+# during dev, should point to your local machine
+# host: localhost:5151
+# host: account.shipbac.com
+# basePath prefixes all resource paths 
+basePath: /
+# 
+schemes:
+  # tip: remove http to make production-grade
+  # - http
+  - https
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+# format of the responses to the client (Accepts)
+produces:
+  - application/json
+paths:
+  /api/f/staff/login:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: auth_ctrl
+    post:
+      tags: ['Staff']
+      description: Add New staff permission information
+      # used as the method name of the controller
+      operationId: staffLogin
+      parameters:
+        - name: body
+          in: body
+          description: Staff login
+          schema:
+           $ref: '#/definitions/staffLogin'
+          required: true 
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/HelloWorldResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"                                                                                                                                             
+  /swagger:
+    x-swagger-pipe: swagger_raw  
+# complex objects have schema definitions
+definitions:
+  HelloWorldResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string
+  ErrorResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string
+  staffLogin:
+    type: object
+    properties:
+      email:
+        type: string
+      password:
+        type: string
+ 

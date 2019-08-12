@@ -1,0 +1,104 @@
+.tn-i-d-m-b {}
+
+.tn-i-d-m-b .tn-i-d-b {
+    width: 120px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px;
+    position: relative;
+}
+
+.tn-i-d-m-b .tn-i-d-b img {
+    width: 100%;
+    height: 75px;
+}
+
+.nt-err-msg {
+    color: red;
+}
+
+.nt-btn {
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #e11246;
+    color: #e11246;
+    text-transform: uppercase;
+    min-width: 100px;
+    min-height: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 10px;
+    background: #fff;
+}
+
+.nt-btn:hover,
+.nt-btn:focus {
+    background: #e11246;
+    color: #fff;
+}
+
+.no-min-width {
+    margin: 8px 5px;
+    height: initial;
+    padding: 8px 12px;
+    min-width: initial;
+}
+
+.tn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    font-size: 8px;
+    opacity: .8;
+    padding: 5px;
+    min-height: auto;
+    font-weight: 900;
+}
+
+input {
+    width: 100%;
+}
+
+.tn-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.inputStyleForEditor {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1), 0 3px 4px 0 rgba(0, 0, 0, .3), 0 4px 6px 0 rgba(0, 0, 0, .3);
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    cursor: pointer;
+    height: 43px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: none;
+    padding: 0;
+}
+
+.inputStyleForEditor:before {
+    color: #888;
+    text-align: center;
+    content: 'Select Image';
+    display: inline-block;
+    padding: 12px;
+    width: 100%;
+    background-color: #2a2a2e;
+}
+
+.inputStyleForEditor:hover:before {
+    color: #fff;
+}
+
+.inputStyleForEditor::-webkit-file-upload-button {
+    visibility: hidden;
+}

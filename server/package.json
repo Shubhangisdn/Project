@@ -11,7 +11,7 @@
         "@easypost/api": "^3.6.4",
         "aftership": "^5.4.5",
         "async": "^2.6.1",
-        "aws-sdk": "^2.320.0",
+        "aws-sdk": "^2.814.0",
         "bcrypt": "^3.0.5",
         "co": "^4.6.0",
         "convert-excel-to-json": "^1.6.0",

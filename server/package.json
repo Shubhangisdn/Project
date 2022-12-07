@@ -18,7 +18,7 @@
         "crypto": "^1.0.1",
         "crypto-js": "^3.1.9-1",
         "excel-as-json": "^2.0.2",
-        "express": "^4.12.3",
+        "express": "^4.18.2",
         "file-system": "^2.2.2",
         "formidable": "^1.2.1",
         "handlebars": "^4.1.1",
@@ -36,7 +36,7 @@
         "randomstring": "^1.1.5",
         "scandit-sdk": "^4.1.0",
         "shortid": "^2.2.13",
-        "swagger-express-mw": "^0.1.0",
+        "swagger-express-mw": "^0.7.0",
         "swagger-ui": "^3.18.3",
         "winston": "^3.1.0",
         "xlsx": "^0.14.1",
@@ -44,7 +44,7 @@
     },
     "devDependencies": {
         "should": "^7.1.0",
-        "supertest": "^1.0.0"
+        "supertest": "^6.3.2"
     },
     "scripts": {
         "start": "node app.js",
